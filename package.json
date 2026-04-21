@@ -1,0 +1,64 @@
+{
+  "name": "@typescript-package/promise",
+  "version": "1.0.0",
+  "author": "@typescript-package <sciborrudnicki@wvvw.dev>",
+  "homepage": "https://github.com/typescript-package/promise#readme",
+  "description": "A lightweight TypeScript library for promises.",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "prepublishOnly": "npm install rimraf && npm run pkg && npm run clean",
+    "pkg": "npm pkg delete dependencies",
+    "clean": "./node_modules/rimraf/dist/esm/bin.mjs ./node_modules && npm pkg delete scripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typescript-package/promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typescript-package/promise/issues"
+  },
+  "keywords": [
+    "@typescript-package",
+    "promise",
+    "deferred",
+    "lazy",
+    "typescript",
+    "library",
+    "npm",
+    "package"
+  ],
+  "funding": [
+    {
+      "type": "stripe",
+      "url": "https://donate.stripe.com/dR614hfDZcJE3wAcMM"
+    },
+    {
+      "type": "Donorbox",
+      "url": "https://donorbox.org/become-a-sponsor-to-the-angular-package?default_interval=once&amount=1"
+    },
+    {
+      "type": "Open Collective",
+      "url": "https://opencollective.com/sterblack"
+    },
+    {
+      "type": "Ko-fi",
+      "url": "https://ko-fi.com/sterblack"
+    },
+    {
+      "type": "4Fund",
+      "url": "https://4fund.com/bruubs"
+    },
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/sterblack"
+    },
+    {
+      "type": "individual",
+      "url": "https://checkout.revolut.com/pay/048b10a3-0e10-42c8-a917-e3e9cb4c8e29"
+    }
+  ]
+}
