@@ -1,6 +1,6 @@
 {
   "name": "@typescript-package/promise",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "@typescript-package <sciborrudnicki@wvvw.dev>",
   "homepage": "https://github.com/typescript-package/promise#readme",
   "description": "A lightweight TypeScript library for promises.",
