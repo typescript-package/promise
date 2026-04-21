@@ -9,6 +9,15 @@ import { Deferred } from "./deferred.class";
  */
 export class LazyDeferred<T> implements PromiseLike<T> {
   /**
+   * @description Gets the promise associated with the lazy deferred.
+   * @readonly
+   * @type {Promise<T>}
+   */
+  get promise(): Promise<T> {
+    return this.#execute().promise;
+  }
+
+  /**
    * @description Indicates whether the lazy deferred has been settled (resolved or rejected).
    * @readonly
    * @type {boolean}
