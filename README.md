@@ -68,6 +68,8 @@ deferred.catch(error => {
 });
 ```
 
+[Source](https://github.com/typescript-package/promise/blob/main/src/lib/deferred.class.ts)
+
 ### `LazyDeferred`
 
 ```typescript
@@ -100,6 +102,8 @@ console.log(`lazyDeferred.settled`, lazyDeferred.settled); // true
 console.log(`lazyDeferred.value`, lazyDeferred.value); // 134
 ```
 
+[Source](https://github.com/typescript-package/promise/blob/main/src/lib/lazy-deferred.class.ts)
+
 ### `LazyPromise`
 
 ```typescript
@@ -128,6 +132,8 @@ console.log(`lazyPromise.value`, lazyPromise.value); // undefined
 // Resets the lazy promise to its initial state, allowing it to be executed again with the same factory function.
 // lazyPromise.reset();
 ```
+
+[Source](https://github.com/typescript-package/promise/blob/main/src/lib/lazy-promise.class.ts)
 
 ## Contributing
 
