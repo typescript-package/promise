@@ -100,6 +100,8 @@ console.log(`lazyDeferred.settled`, lazyDeferred.settled); // true
 console.log(`lazyDeferred.value`, lazyDeferred.value); // 134
 ```
 
+[Source](https://)
+
 ### `LazyPromise`
 
 ```typescript
